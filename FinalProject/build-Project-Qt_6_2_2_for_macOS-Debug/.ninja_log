@@ -1,0 +1,9 @@
+# ninja log v5
+0	438	1649616649677793380	Project_autogen/timestamp	42de44c796e85802
+0	438	1649616649677793380	Project_autogen/mocs_compilation.cpp	42de44c796e85802
+0	438	1649616649677793380	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/timestamp	42de44c796e85802
+0	438	1649616649677793380	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/mocs_compilation.cpp	42de44c796e85802
+438	3586	1649616652834966493	CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o	7adf876ab574a576
+439	3855	1649616653104129264	CMakeFiles/Project.dir/main.cpp.o	b55e915a98119292
+441	3910	1649616653153412695	CMakeFiles/Project.dir/mainwindow.cpp.o	6348ec643a8dc80c
+3910	4112	1649616653374539184	Project	57c78b85c5dcff8a

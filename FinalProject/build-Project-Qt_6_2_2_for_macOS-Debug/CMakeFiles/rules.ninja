@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__Project_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Users/youssefQt/Tools/CMake/CMake.app/Contents/bin/cmake --regenerate-during-build -S"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/Project" -B"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug"
+  command = /Users/youssefQt/Tools/CMake/CMake.app/Contents/bin/cmake --regenerate-during-build -S"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project" -B"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug"
   description = Re-running CMake...
   generator = 1
 

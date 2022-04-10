@@ -2,11 +2,11 @@
 	"BUILD_DIR" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen",
 	"CMAKE_BINARY_DIR" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug",
 	"CMAKE_CURRENT_BINARY_DIR" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/Project",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project",
 	"CMAKE_EXECUTABLE" : "/Users/youssefQt/Tools/CMake/CMake.app/Contents/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/Project/CMakeLists.txt",
+		"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/CMakeLists.txt",
 		"/Applications/Qt Creator.app/Contents/Resources/package-manager/auto-setup.cmake",
 		"/Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeDetermineSystem.cmake",
 		"/Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeSystem.cmake.in",
@@ -345,13 +345,13 @@
 		"/Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
 		"/Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeParseArguments.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/Project",
+	"CMAKE_SOURCE_DIR" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project",
 	"DEP_FILE" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "Project_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/Project/mainwindow.h",
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
@@ -371,7 +371,7 @@
 	"MOC_INCLUDES" : 
 	[
 		"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug",
-		"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/Project",
+		"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project",
 		"/Users/youssefQt/6.2.2/macos/lib/QtCore.framework",
 		"/Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Headers",
 		"/Users/youssefQt/6.2.2/macos/mkspecs/macx-clang",
@@ -410,12 +410,12 @@
 	"SOURCES" : 
 	[
 		[
-			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/Project/main.cpp",
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/Project/mainwindow.cpp",
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/mainwindow.cpp",
 			"MU",
 			null
 		]
