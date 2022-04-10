@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'mainwindow.h'
+** Meta object code from reading C++ file 'player.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.2.2)
 **
@@ -7,11 +7,11 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../../Project/mainwindow.h"
+#include "../../../../Project/player.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'mainwindow.h' doesn't include <QObject>."
+#error "The header file 'player.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.2.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -21,25 +21,26 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_MainWindow_t {
-    const uint offsetsAndSize[6];
-    char stringdata0[42];
+struct qt_meta_stringdata_Player_t {
+    const uint offsetsAndSize[10];
+    char stringdata0[39];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
+    uint(offsetof(qt_meta_stringdata_Player_t, stringdata0) + ofs), len 
+static const qt_meta_stringdata_Player_t qt_meta_stringdata_Player = {
     {
-QT_MOC_LITERAL(0, 10), // "MainWindow"
-QT_MOC_LITERAL(11, 29), // "on_registerHereButton_clicked"
-QT_MOC_LITERAL(41, 0) // ""
+QT_MOC_LITERAL(0, 6), // "Player"
+QT_MOC_LITERAL(7, 13), // "keyPressEvent"
+QT_MOC_LITERAL(21, 0), // ""
+QT_MOC_LITERAL(22, 10), // "QKeyEvent*"
+QT_MOC_LITERAL(33, 5) // "event"
 
     },
-    "MainWindow\0on_registerHereButton_clicked\0"
-    ""
+    "Player\0keyPressEvent\0\0QKeyEvent*\0event"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_MainWindow[] = {
+static const uint qt_meta_data_Player[] = {
 
  // content:
       10,       // revision
@@ -53,36 +54,35 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   20,    2, 0x08,    1 /* Private */,
+       1,    1,   20,    2, 0x0a,    1 /* Public */,
 
  // slots: parameters
-    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 3,    4,
 
        0        // eod
 };
 
-void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Player::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<MainWindow *>(_o);
+        auto *_t = static_cast<Player *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_registerHereButton_clicked(); break;
+        case 0: _t->keyPressEvent((*reinterpret_cast< QKeyEvent*(*)>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
-const QMetaObject MainWindow::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_MainWindow.offsetsAndSize,
-    qt_meta_data_MainWindow,
+const QMetaObject Player::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_meta_stringdata_Player.offsetsAndSize,
+    qt_meta_data_Player,
     qt_static_metacall,
     nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t
-, QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>
+qt_incomplete_metaTypeArray<qt_meta_stringdata_Player_t
+, QtPrivate::TypeAndForceComplete<Player, std::true_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QKeyEvent *, std::false_type>
 
 
 >,
@@ -90,22 +90,24 @@ qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t
 } };
 
 
-const QMetaObject *MainWindow::metaObject() const
+const QMetaObject *Player::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MainWindow::qt_metacast(const char *_clname)
+void *Player::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_MainWindow.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_Player.stringdata0))
         return static_cast<void*>(this);
-    return QMainWindow::qt_metacast(_clname);
+    if (!strcmp(_clname, "QGraphicsPixmapItem"))
+        return static_cast< QGraphicsPixmapItem*>(this);
+    return QObject::qt_metacast(_clname);
 }
 
-int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Player::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

@@ -1,5 +1,5 @@
-Project_autogen/timestamp: \
-  /Applications/Qt\ Creator.app/Contents/Resources/package-manager/auto-setup.cmake \
+/Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/EWIEGA46WW/moc_player.cpp: /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/player.h \
+  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/moc_predefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h \
@@ -257,15 +257,6 @@ Project_autogen/timestamp: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdarg.h \
-  CMakeFiles/3.21.1/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.21.1/CMakeSystem.cmake \
-  Project_autogen/moc_predefs.h \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/CMakeLists.txt \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/main.cpp \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/mainwindow.cpp \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/mainwindow.h \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/player.cpp \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/player.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QList \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QRect \
@@ -395,123 +386,4 @@ Project_autogen/timestamp: \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/FindWrapAtomic.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/FindWrapOpenGL.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/Qt6Config.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigExtras.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigVersion.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/Qt6Dependencies.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/Qt6Targets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/Qt6VersionlessTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/QtFeature.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/QtFeatureCommon.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/QtPublicPluginHelpers.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/QtPublicTargetHelpers.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreMacros.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBus/Qt6DBusTargets-relwithdebinfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBus/Qt6DBusTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBus/Qt6DBusVersionlessTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-relwithdebinfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
-  /Users/youssefQt/6.2.2/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCXXInformation.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeFindDependencyMacro.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeGenericSystem.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeParseArguments.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CheckCXXCompilerFlag.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CheckCXXSourceCompiles.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CheckIncludeFileCXX.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CheckLibraryExists.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Compiler/AppleClang-CXX.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Compiler/Clang.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Compiler/GNU.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/FindOpenGL.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/FindPackageMessage.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/FindThreads.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Internal/CheckCompilerFlag.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/MacroAddFileDependencies.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Platform/Apple-AppleClang-CXX.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Platform/Apple-Clang-CXX.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Platform/Apple-Clang.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Platform/Darwin-Initialize.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Platform/Darwin.cmake \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Platform/UnixPaths.cmake \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/mainwindow.ui \
-  /Users/youssefQt/Tools/CMake/CMake.app/Contents/bin/cmake
+  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h

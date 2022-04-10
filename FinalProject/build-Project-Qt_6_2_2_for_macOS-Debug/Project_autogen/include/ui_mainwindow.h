@@ -11,8 +11,11 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -22,6 +25,26 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QWidget *LoginMenu;
+    QLabel *label_login;
+    QLabel *label_username;
+    QLabel *label_pass;
+    QLineEdit *lineEdit_username;
+    QLineEdit *lineEdit_pass;
+    QLabel *label_newUser;
+    QPushButton *registerHereButton;
+    QPushButton *loginButton;
+    QLabel *label_nameOfGame;
+    QWidget *RegisterMenu;
+    QLabel *label_registerMenu;
+    QLabel *label_newPass;
+    QLabel *label_newUsername;
+    QLineEdit *lineEdit_newUsername;
+    QLineEdit *lineEdit_newPass;
+    QLineEdit *lineEdit_newPass_2;
+    QLabel *label_newPass_2;
+    QPushButton *registerButton;
+    QPushButton *backButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -29,12 +52,99 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(800, 600);
+        MainWindow->resize(1119, 863);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        LoginMenu = new QWidget(centralwidget);
+        LoginMenu->setObjectName(QString::fromUtf8("LoginMenu"));
+        LoginMenu->setGeometry(QRect(440, 200, 581, 461));
+        label_login = new QLabel(LoginMenu);
+        label_login->setObjectName(QString::fromUtf8("label_login"));
+        label_login->setGeometry(QRect(240, 120, 141, 31));
+        label_login->setStyleSheet(QString::fromUtf8("font: 25pt \"Times New Roman\";"));
+        label_login->setAlignment(Qt::AlignCenter);
+        label_username = new QLabel(LoginMenu);
+        label_username->setObjectName(QString::fromUtf8("label_username"));
+        label_username->setGeometry(QRect(200, 200, 91, 16));
+        label_username->setStyleSheet(QString::fromUtf8("font: 18pt \"Times New Roman\";"));
+        label_username->setAlignment(Qt::AlignCenter);
+        label_pass = new QLabel(LoginMenu);
+        label_pass->setObjectName(QString::fromUtf8("label_pass"));
+        label_pass->setGeometry(QRect(200, 230, 91, 16));
+        label_pass->setStyleSheet(QString::fromUtf8("font: 18pt \"Times New Roman\";"));
+        label_pass->setAlignment(Qt::AlignCenter);
+        lineEdit_username = new QLineEdit(LoginMenu);
+        lineEdit_username->setObjectName(QString::fromUtf8("lineEdit_username"));
+        lineEdit_username->setGeometry(QRect(290, 200, 113, 21));
+        lineEdit_pass = new QLineEdit(LoginMenu);
+        lineEdit_pass->setObjectName(QString::fromUtf8("lineEdit_pass"));
+        lineEdit_pass->setGeometry(QRect(290, 230, 113, 21));
+        label_newUser = new QLabel(LoginMenu);
+        label_newUser->setObjectName(QString::fromUtf8("label_newUser"));
+        label_newUser->setGeometry(QRect(230, 280, 71, 16));
+        label_newUser->setStyleSheet(QString::fromUtf8("font: 13pt \"Times New Roman\";"));
+        registerHereButton = new QPushButton(LoginMenu);
+        registerHereButton->setObjectName(QString::fromUtf8("registerHereButton"));
+        registerHereButton->setGeometry(QRect(300, 270, 91, 31));
+        registerHereButton->setStyleSheet(QString::fromUtf8("font: 13pt \"Times New Roman\";"));
+        loginButton = new QPushButton(LoginMenu);
+        loginButton->setObjectName(QString::fromUtf8("loginButton"));
+        loginButton->setGeometry(QRect(410, 223, 51, 31));
+        loginButton->setStyleSheet(QString::fromUtf8("font: 13pt \"Times New Roman\";"));
+        label_nameOfGame = new QLabel(centralwidget);
+        label_nameOfGame->setObjectName(QString::fromUtf8("label_nameOfGame"));
+        label_nameOfGame->setGeometry(QRect(595, 120, 311, 61));
+        label_nameOfGame->setStyleSheet(QString::fromUtf8("font: 48pt \".AppleSystemUIFont\";\n"
+"font: italic 48pt \"Times New Roman\";"));
+        label_nameOfGame->setAlignment(Qt::AlignCenter);
+        RegisterMenu = new QWidget(centralwidget);
+        RegisterMenu->setObjectName(QString::fromUtf8("RegisterMenu"));
+        RegisterMenu->setEnabled(true);
+        RegisterMenu->setGeometry(QRect(440, 0, 1001, 611));
+        label_registerMenu = new QLabel(RegisterMenu);
+        label_registerMenu->setObjectName(QString::fromUtf8("label_registerMenu"));
+        label_registerMenu->setGeometry(QRect(230, 320, 161, 31));
+        label_registerMenu->setStyleSheet(QString::fromUtf8("font: 25pt \"Times New Roman\";"));
+        label_registerMenu->setAlignment(Qt::AlignCenter);
+        label_newPass = new QLabel(RegisterMenu);
+        label_newPass->setObjectName(QString::fromUtf8("label_newPass"));
+        label_newPass->setGeometry(QRect(140, 430, 161, 20));
+        label_newPass->setStyleSheet(QString::fromUtf8("font: 18pt \"Times New Roman\";"));
+        label_newPass->setAlignment(Qt::AlignCenter);
+        label_newUsername = new QLabel(RegisterMenu);
+        label_newUsername->setObjectName(QString::fromUtf8("label_newUsername"));
+        label_newUsername->setGeometry(QRect(140, 390, 161, 20));
+        label_newUsername->setStyleSheet(QString::fromUtf8("font: 18pt \"Times New Roman\";"));
+        label_newUsername->setAlignment(Qt::AlignCenter);
+        lineEdit_newUsername = new QLineEdit(RegisterMenu);
+        lineEdit_newUsername->setObjectName(QString::fromUtf8("lineEdit_newUsername"));
+        lineEdit_newUsername->setGeometry(QRect(320, 390, 113, 24));
+        lineEdit_newPass = new QLineEdit(RegisterMenu);
+        lineEdit_newPass->setObjectName(QString::fromUtf8("lineEdit_newPass"));
+        lineEdit_newPass->setGeometry(QRect(320, 430, 113, 24));
+        lineEdit_newPass_2 = new QLineEdit(RegisterMenu);
+        lineEdit_newPass_2->setObjectName(QString::fromUtf8("lineEdit_newPass_2"));
+        lineEdit_newPass_2->setGeometry(QRect(320, 470, 113, 24));
+        label_newPass_2 = new QLabel(RegisterMenu);
+        label_newPass_2->setObjectName(QString::fromUtf8("label_newPass_2"));
+        label_newPass_2->setGeometry(QRect(150, 470, 151, 20));
+        label_newPass_2->setStyleSheet(QString::fromUtf8("font: 18pt \"Times New Roman\";"));
+        label_newPass_2->setAlignment(Qt::AlignCenter);
+        registerButton = new QPushButton(RegisterMenu);
+        registerButton->setObjectName(QString::fromUtf8("registerButton"));
+        registerButton->setGeometry(QRect(270, 520, 80, 31));
+        registerButton->setStyleSheet(QString::fromUtf8("font: 18pt \"Times New Roman\";"));
+        backButton = new QPushButton(RegisterMenu);
+        backButton->setObjectName(QString::fromUtf8("backButton"));
+        backButton->setGeometry(QRect(910, 20, 51, 31));
+        backButton->setStyleSheet(QString::fromUtf8("font: 13pt \"Times New Roman\";"));
         MainWindow->setCentralWidget(centralwidget);
+        RegisterMenu->raise();
+        label_nameOfGame->raise();
+        LoginMenu->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
+        menubar->setGeometry(QRect(0, 0, 1119, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -48,6 +158,19 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        label_login->setText(QCoreApplication::translate("MainWindow", "Login Menu", nullptr));
+        label_username->setText(QCoreApplication::translate("MainWindow", "Username :", nullptr));
+        label_pass->setText(QCoreApplication::translate("MainWindow", "Password :", nullptr));
+        label_newUser->setText(QCoreApplication::translate("MainWindow", "New User?", nullptr));
+        registerHereButton->setText(QCoreApplication::translate("MainWindow", "Register here", nullptr));
+        loginButton->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
+        label_nameOfGame->setText(QCoreApplication::translate("MainWindow", "Name of game", nullptr));
+        label_registerMenu->setText(QCoreApplication::translate("MainWindow", "Register Menu", nullptr));
+        label_newPass->setText(QCoreApplication::translate("MainWindow", "Enter new Password :", nullptr));
+        label_newUsername->setText(QCoreApplication::translate("MainWindow", "Enter new Username :", nullptr));
+        label_newPass_2->setText(QCoreApplication::translate("MainWindow", "Re-Enter Password :", nullptr));
+        registerButton->setText(QCoreApplication::translate("MainWindow", "Register", nullptr));
+        backButton->setText(QCoreApplication::translate("MainWindow", "BACK", nullptr));
     } // retranslateUi
 
 };
