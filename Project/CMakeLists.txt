@@ -21,6 +21,12 @@ set(PROJECT_SOURCES
         mainwindow.ui
         player.h
         player.cpp
+        game.h
+        game.cpp
+        projectile.h
+        projectile.cpp
+        map.h
+        map.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

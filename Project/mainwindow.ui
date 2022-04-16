@@ -359,29 +359,6 @@ font: 13pt &quot;Times New Roman&quot;;</string>
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="label_background">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1900</width>
-      <height>1200</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <zorder>label_background</zorder>
    <zorder>RegisterMenu</zorder>
    <zorder>label_nameOfGame</zorder>
    <zorder>LoginMenu</zorder>

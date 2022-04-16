@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'player.h'
+** Meta object code from reading C++ file 'projectile.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.2.2)
 **
@@ -7,11 +7,11 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../../Project/player.h"
+#include "../../../../Project/projectile.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'player.h' doesn't include <QObject>."
+#error "The header file 'projectile.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.2.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -21,34 +21,30 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_Player_t {
-    const uint offsetsAndSize[12];
-    char stringdata0[49];
+struct qt_meta_stringdata_Projectile_t {
+    const uint offsetsAndSize[6];
+    char stringdata0[17];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_Player_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_Player_t qt_meta_stringdata_Player = {
+    uint(offsetof(qt_meta_stringdata_Projectile_t, stringdata0) + ofs), len 
+static const qt_meta_stringdata_Projectile_t qt_meta_stringdata_Projectile = {
     {
-QT_MOC_LITERAL(0, 6), // "Player"
-QT_MOC_LITERAL(7, 13), // "keyPressEvent"
-QT_MOC_LITERAL(21, 0), // ""
-QT_MOC_LITERAL(22, 10), // "QKeyEvent*"
-QT_MOC_LITERAL(33, 5), // "event"
-QT_MOC_LITERAL(39, 9) // "setActive"
+QT_MOC_LITERAL(0, 10), // "Projectile"
+QT_MOC_LITERAL(11, 4), // "move"
+QT_MOC_LITERAL(16, 0) // ""
 
     },
-    "Player\0keyPressEvent\0\0QKeyEvent*\0event\0"
-    "setActive"
+    "Projectile\0move\0"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_Player[] = {
+static const uint qt_meta_data_Projectile[] = {
 
  // content:
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       1,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -56,38 +52,36 @@ static const uint qt_meta_data_Player[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   26,    2, 0x0a,    1 /* Public */,
-       5,    0,   29,    2, 0x0a,    3 /* Public */,
+       1,    0,   20,    2, 0x0a,    1 /* Public */,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 3,    4,
     QMetaType::Void,
 
        0        // eod
 };
 
-void Player::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Projectile::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<Player *>(_o);
+        auto *_t = static_cast<Projectile *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->keyPressEvent((*reinterpret_cast< QKeyEvent*(*)>(_a[1]))); break;
-        case 1: _t->setActive(); break;
+        case 0: _t->move(); break;
         default: ;
         }
     }
+    (void)_a;
 }
 
-const QMetaObject Player::staticMetaObject = { {
+const QMetaObject Projectile::staticMetaObject = { {
     QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_Player.offsetsAndSize,
-    qt_meta_data_Player,
+    qt_meta_stringdata_Projectile.offsetsAndSize,
+    qt_meta_data_Projectile,
     qt_static_metacall,
     nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_Player_t
-, QtPrivate::TypeAndForceComplete<Player, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QKeyEvent *, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
+qt_incomplete_metaTypeArray<qt_meta_stringdata_Projectile_t
+, QtPrivate::TypeAndForceComplete<Projectile, std::true_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 
 >,
@@ -95,34 +89,34 @@ qt_incomplete_metaTypeArray<qt_meta_stringdata_Player_t
 } };
 
 
-const QMetaObject *Player::metaObject() const
+const QMetaObject *Projectile::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Player::qt_metacast(const char *_clname)
+void *Projectile::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_Player.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_Projectile.stringdata0))
         return static_cast<void*>(this);
     if (!strcmp(_clname, "QGraphicsPixmapItem"))
         return static_cast< QGraphicsPixmapItem*>(this);
     return QObject::qt_metacast(_clname);
 }
 
-int Player::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Projectile::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 1;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 1)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 1;
     }
     return _id;
 }

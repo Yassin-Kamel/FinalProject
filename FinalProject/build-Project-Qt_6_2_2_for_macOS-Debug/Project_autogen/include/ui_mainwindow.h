@@ -47,7 +47,6 @@ public:
     QPushButton *registerButton;
     QLabel *label_errMessage_2;
     QPushButton *backButton;
-    QLabel *label_background;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -152,14 +151,7 @@ public:
         backButton->setObjectName(QString::fromUtf8("backButton"));
         backButton->setGeometry(QRect(270, 400, 61, 31));
         backButton->setStyleSheet(QString::fromUtf8("font: 18pt \"Times New Roman\";"));
-        label_background = new QLabel(centralwidget);
-        label_background->setObjectName(QString::fromUtf8("label_background"));
-        label_background->setGeometry(QRect(0, 0, 1800, 1000));
-        label_background->setScaledContents(false);
-        label_background->setAlignment(Qt::AlignCenter);
-        label_background->setWordWrap(false);
         MainWindow->setCentralWidget(centralwidget);
-        label_background->raise();
         RegisterMenu->raise();
         label_nameOfGame->raise();
         LoginMenu->raise();
@@ -194,7 +186,6 @@ public:
         registerButton->setText(QCoreApplication::translate("MainWindow", "Register", nullptr));
         label_errMessage_2->setText(QString());
         backButton->setText(QCoreApplication::translate("MainWindow", "Back", nullptr));
-        label_background->setText(QString());
     } // retranslateUi
 
 };

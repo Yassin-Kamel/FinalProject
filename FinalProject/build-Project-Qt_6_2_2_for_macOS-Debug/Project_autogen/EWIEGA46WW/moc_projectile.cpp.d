@@ -1,4 +1,4 @@
-/Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/EWIEGA46WW/moc_mainwindow.cpp: /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/mainwindow.h \
+/Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/EWIEGA46WW/moc_projectile.cpp: /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/projectile.h \
   /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/moc_predefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
@@ -257,20 +257,9 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdarg.h \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/game.h \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/map.h \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/player.h \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/projectile.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QDebug \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QList \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QRect \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QSize \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QSizeF \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QTextStream \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QVector \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qanystringview.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qarraydata.h \
@@ -292,31 +281,25 @@
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qcontainerinfo.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qcontainertools_impl.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qcoreevent.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qfile.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qfiledevice.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qflags.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qglobal.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qhash.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qline.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qlist.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qlogging.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qloggingcategory.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qmap.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qmargins.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qmath.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qmetacontainer.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qmetatype.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qnamespace.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qnativeinterface.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qnumeric.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qobject.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qobject_impl.h \
@@ -324,7 +307,6 @@
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qobjectdefs_impl.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qpair.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qpoint.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qpointer.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qproperty.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qpropertyprivate.h \
@@ -354,62 +336,26 @@
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qtimer.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qurl.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qvector.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/QBrush \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/QKeyEvent \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/QPixmap \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/QTransform \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qcolor.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qcursor.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qevent.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qeventpoint.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qfont.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qfontinfo.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qfontmetrics.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qicon.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qimage.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qinputdevice.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qpainter.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qpainterpath.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qpen.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qpointingdevice.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qpolygon.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qscreen.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qtextoption.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qvector2d.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qvectornd.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsPixmapItem \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsview.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qscrollarea.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
+  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h

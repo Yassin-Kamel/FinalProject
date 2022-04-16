@@ -6,6 +6,7 @@
 #include <QTextStream>
 #include <QVector>
 #include <QGraphicsPixmapItem>
+#include "game.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

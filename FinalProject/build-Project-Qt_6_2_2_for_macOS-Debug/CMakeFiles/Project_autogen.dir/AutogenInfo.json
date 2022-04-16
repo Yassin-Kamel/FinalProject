@@ -290,15 +290,33 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/game.h",
+			"MU",
+			"EWIEGA46WW/moc_game.cpp",
+			null
+		],
+		[
 			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		],
 		[
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/map.h",
+			"MU",
+			"EWIEGA46WW/moc_map.cpp",
+			null
+		],
+		[
 			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/player.h",
 			"MU",
 			"EWIEGA46WW/moc_player.cpp",
+			null
+		],
+		[
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/projectile.h",
+			"MU",
+			"EWIEGA46WW/moc_projectile.cpp",
 			null
 		]
 	],
@@ -355,6 +373,11 @@
 	"SOURCES" : 
 	[
 		[
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/game.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/main.cpp",
 			"MU",
 			null
@@ -365,7 +388,17 @@
 			null
 		],
 		[
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/map.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/player.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/projectile.cpp",
 			"MU",
 			null
 		]

@@ -58,7 +58,8 @@ void MainWindow::on_loginButton_clicked()
             if(creds.at(i).username == ui->lineEdit_username->text() && creds.at(i).password == ui->lineEdit_pass->text())
             {
                 exists = true;
-                this->close();
+                this->hide();
+//                Game g;
             }
             i++;
         }
