@@ -8,18 +8,22 @@
 #include <QTextStream>
 #include <QGraphicsPixmapItem>
 #include <QDebug>
-#include <QBrush>
 #include "map.h"
+#include "enemy.h"
+#include <QVector>
 
-class Game: public QObject, public QGraphicsPixmapItem
+class Game: public QGraphicsView
 {
-    Q_OBJECT
 public:
     Game();
-    QGraphicsView *view;
     QGraphicsScene *scene;
     Player *p;
-    Map *m;
+    QVector<Enemy*> enemies1;
+    QVector<Enemy*> enemies2;
+    QVector<Enemy*> enemies3;
+    Map *map;
+    bool active;
+//    QVector<Enemy*> enemies;
 };
 
 #endif // GAME_H

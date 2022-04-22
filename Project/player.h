@@ -6,18 +6,18 @@
 #include <QGraphicsView>
 #include <QGraphicsScene>
 #include "projectile.h"
-#include <QTimer>
 
 class Player: public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
-    Player(int [12][12],QGraphicsView &,QGraphicsScene &);
-private:
+    Player(QVector<QVector<int>>,QGraphicsScene *);
+    int health;
     int rows;
     int cols;
-    int data[12][12];
-    QGraphicsView *temp_view;
+private:
+
+    QVector<QVector<int>> data;
     QGraphicsScene *temp_scene;
     char direction;
     bool active;

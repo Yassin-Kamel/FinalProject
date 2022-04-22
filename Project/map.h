@@ -8,13 +8,24 @@
 #include <QTextStream>
 #include <QGraphicsView>
 #include <QGraphicsScene>
+#include <QVector>
+
 
 class Map: public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
-    Map(int i, int j);
-    int map1[12][12];
+    Map();
+    QVector<QVector<int>> map1;
+    struct Item
+    {
+        QGraphicsPixmapItem pixmap;
+        bool isObstacle;
+        bool isEnemy;
+        int col;
+        int row;
+    };
+    QVector<QVector<Item*>> items;
 };
 
 #endif // MAP_H

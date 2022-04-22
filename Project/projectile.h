@@ -11,8 +11,12 @@ class Projectile: public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
-    Projectile(QString, QString);
+    Projectile(QString, QString,char type);
     QString direction;
+    int row;
+    int col;
+    int damage;
+    char type;
 
 public slots:
     void move();

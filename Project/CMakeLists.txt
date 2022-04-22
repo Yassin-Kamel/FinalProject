@@ -27,6 +27,8 @@ set(PROJECT_SOURCES
         projectile.cpp
         map.h
         map.cpp
+        enemy.h
+        enemy.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

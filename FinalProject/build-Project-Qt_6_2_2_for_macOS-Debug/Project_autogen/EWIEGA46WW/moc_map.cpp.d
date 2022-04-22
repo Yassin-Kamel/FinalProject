@@ -260,6 +260,7 @@
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QTextStream \
+  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QVector \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qanystringview.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qarraydata.h \
@@ -340,6 +341,7 @@
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
+  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qvector.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/QPixmap \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \

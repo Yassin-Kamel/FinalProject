@@ -257,7 +257,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdarg.h \
-  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/map.h \
+  /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/obstacles.h \
   /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/player.h \
   /Users/youssef/Dropbox/My\ Mac\ (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/projectile.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QDebug \
@@ -269,6 +269,7 @@
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QSizeF \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QTextStream \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
+  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/QVector \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qanystringview.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qarraydata.h \
@@ -356,8 +357,8 @@
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
+  /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qvector.h \
   /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
-  /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/QBrush \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/QKeyEvent \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/QPixmap \
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/QTransform \

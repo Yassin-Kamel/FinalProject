@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "game.h"
+extern Game*game;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -59,7 +61,8 @@ void MainWindow::on_loginButton_clicked()
             {
                 exists = true;
                 this->hide();
-//                Game g;
+                game = new Game;
+                game->show();
             }
             i++;
         }
@@ -122,7 +125,10 @@ void MainWindow::on_registerButton_clicked()
                 }
                 outStream<<">\n";
                 file.close();
-                this->close();
+                this->hide();
+                this->hide();
+                game = new Game;
+                game->show();
             }
         }
     }

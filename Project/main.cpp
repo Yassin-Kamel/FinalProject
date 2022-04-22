@@ -3,12 +3,15 @@
 #include <QApplication>
 #include "game.h"
 
+Game *game;
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 //    MainWindow w;
 //    w.setWindowState(Qt::WindowFullScreen);
 //    w.show();
-    Game g;
+    game = new Game();
+    game->show();
     return a.exec();
 }

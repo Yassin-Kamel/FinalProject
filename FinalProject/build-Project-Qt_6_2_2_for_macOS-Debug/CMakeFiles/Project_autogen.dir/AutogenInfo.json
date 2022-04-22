@@ -290,6 +290,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/enemy.h",
+			"MU",
+			"EWIEGA46WW/moc_enemy.cpp",
+			null
+		],
+		[
 			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/game.h",
 			"MU",
 			"EWIEGA46WW/moc_game.cpp",
@@ -372,6 +378,11 @@
 	"SETTINGS_FILE" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/CMakeFiles/Project_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/enemy.cpp",
+			"MU",
+			null
+		],
 		[
 			"/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/game.cpp",
 			"MU",

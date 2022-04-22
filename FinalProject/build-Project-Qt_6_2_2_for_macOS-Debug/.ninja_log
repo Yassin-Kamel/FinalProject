@@ -1,35 +1,30 @@
 # ninja log v5
-738	4481	1650132898601044251	CMakeFiles/Project.dir/projectile.cpp.o	32a66d223bc40967
-14	123	1650135990179063202	Project_autogen/mocs_compilation.cpp	42de44c796e85802
-14	123	1650135990179063202	Project_autogen/timestamp	42de44c796e85802
-1145	6761	1650134544243929869	CMakeFiles/Project.dir/main.cpp.o	b55e915a98119292
-127	4168	1650135994205651311	CMakeFiles/Project.dir/mainwindow.cpp.o	6348ec643a8dc80c
-14	123	1650135990179063202	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/mocs_compilation.cpp	42de44c796e85802
-14	123	1650135990179063202	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/timestamp	42de44c796e85802
+87	2477	1650627187299305881	CMakeFiles/Project.dir/enemy.cpp.o	8fc5e952b89b98aa
+6696	8963	1650226743358918791	CMakeFiles/Project.dir/obstacles.cpp.o	d1c83d91f2bff2c5
+11	100	1650628212801584171	Project_autogen/timestamp	42de44c796e85802
+11	100	1650628212801584171	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/mocs_compilation.cpp	42de44c796e85802
+107	2998	1650624714964242660	CMakeFiles/Project.dir/projectile.cpp.o	32a66d223bc40967
+104	3099	1650628215784756834	CMakeFiles/Project.dir/mainwindow.cpp.o	6348ec643a8dc80c
+639	6973	1650602478524269554	CMakeFiles/Project.dir/main.cpp.o	b55e915a98119292
+11	100	1650628212801584171	Project_autogen/mocs_compilation.cpp	42de44c796e85802
+11	100	1650628212801584171	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/timestamp	42de44c796e85802
 552	4685	1649696781166808167	CMakeFiles/Project.dir/loginwindow.cpp.o	4de593f9f17b97c8
-4168	4429	1650135994476101122	Project	1fce057ba7556fb2
-1146	6700	1650134544183537889	CMakeFiles/Project.dir/game.cpp.o	33ea37745203be66
-1143	6897	1650134544382145704	CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o	7adf876ab574a576
-131	3919	1650135034024071023	CMakeFiles/Project.dir/player.cpp.o	f6dea06fbb6007fb
-127	3545	1650135993579977936	CMakeFiles/Project.dir/map.cpp.o	99b7c2e211aeea85
-17	132	1650136878470078366	Project_autogen/timestamp	42de44c796e85802
-17	132	1650136878470078366	Project_autogen/mocs_compilation.cpp	42de44c796e85802
-17	132	1650136878470078366	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/timestamp	42de44c796e85802
-17	132	1650136878470078366	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/mocs_compilation.cpp	42de44c796e85802
-138	3450	1650136881766533722	CMakeFiles/Project.dir/projectile.cpp.o	32a66d223bc40967
-137	4365	1650136882680975427	CMakeFiles/Project.dir/mainwindow.cpp.o	6348ec643a8dc80c
-4366	4621	1650136882951376897	Project	1fce057ba7556fb2
-15	129	1650136944882774843	Project_autogen/timestamp	42de44c796e85802
-15	129	1650136944882774843	Project_autogen/mocs_compilation.cpp	42de44c796e85802
-15	129	1650136944882774843	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/timestamp	42de44c796e85802
-15	129	1650136944882774843	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/mocs_compilation.cpp	42de44c796e85802
-136	3359	1650136948093743127	CMakeFiles/Project.dir/projectile.cpp.o	32a66d223bc40967
-136	4315	1650136949047708583	CMakeFiles/Project.dir/mainwindow.cpp.o	6348ec643a8dc80c
-4315	4568	1650136949312732879	Project	1fce057ba7556fb2
-21	152	1650136993844116326	Project_autogen/timestamp	42de44c796e85802
-21	152	1650136993844116326	Project_autogen/mocs_compilation.cpp	42de44c796e85802
-21	152	1650136993844116326	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/timestamp	42de44c796e85802
-21	152	1650136993844116326	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/mocs_compilation.cpp	42de44c796e85802
-159	2698	1650136996370884954	CMakeFiles/Project.dir/projectile.cpp.o	32a66d223bc40967
-159	3394	1650136997067275360	CMakeFiles/Project.dir/mainwindow.cpp.o	6348ec643a8dc80c
-3394	3606	1650136997291321541	Project	1fce057ba7556fb2
+3099	3299	1650628215992929220	Project	bc7cc1fbc1909700
+640	7385	1650602478935206151	CMakeFiles/Project.dir/game.cpp.o	33ea37745203be66
+6975	9497	1650602481065359859	CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o	7adf876ab574a576
+640	7480	1650602479026667261	CMakeFiles/Project.dir/player.cpp.o	f6dea06fbb6007fb
+104	2842	1650628215524618206	CMakeFiles/Project.dir/map.cpp.o	99b7c2e211aeea85
+11	85	1650628837976078308	Project_autogen/timestamp	42de44c796e85802
+11	85	1650628837976078308	Project_autogen/mocs_compilation.cpp	42de44c796e85802
+11	85	1650628837976078308	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/timestamp	42de44c796e85802
+11	85	1650628837976078308	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/mocs_compilation.cpp	42de44c796e85802
+88	3156	1650628841023968160	CMakeFiles/Project.dir/map.cpp.o	99b7c2e211aeea85
+88	3421	1650628841292608895	CMakeFiles/Project.dir/mainwindow.cpp.o	6348ec643a8dc80c
+3421	3668	1650628841552467097	Project	bc7cc1fbc1909700
+9	92	1650628876245202670	Project_autogen/timestamp	42de44c796e85802
+9	92	1650628876245202670	Project_autogen/mocs_compilation.cpp	42de44c796e85802
+9	92	1650628876245202670	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/timestamp	42de44c796e85802
+9	92	1650628876245202670	/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/mocs_compilation.cpp	42de44c796e85802
+98	2976	1650628879109323532	CMakeFiles/Project.dir/map.cpp.o	99b7c2e211aeea85
+98	3163	1650628879302845670	CMakeFiles/Project.dir/mainwindow.cpp.o	6348ec643a8dc80c
+3163	3341	1650628879486515668	Project	bc7cc1fbc1909700
