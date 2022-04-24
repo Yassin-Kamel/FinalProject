@@ -800,7 +800,7 @@ QPushButton:hover { background-color:rgb(0, 80, 0);}</string>
 color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
-             <string>Name of Game</string>
+             <string>Kingdom Rush</string>
             </property>
            </widget>
           </item>
@@ -1381,7 +1381,7 @@ font-size: 22px;}
 QPushButton:hover { background-color:rgb(0, 80, 0);}</string>
               </property>
               <property name="text">
-               <string>Restart?</string>
+               <string>Restart</string>
               </property>
              </widget>
             </item>
