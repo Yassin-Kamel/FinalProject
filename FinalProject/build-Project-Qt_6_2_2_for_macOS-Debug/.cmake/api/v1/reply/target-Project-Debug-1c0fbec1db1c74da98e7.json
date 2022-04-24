@@ -14,8 +14,7 @@
 			"_qt_internal_create_executable",
 			"qt6_add_executable",
 			"qt_add_executable",
-			"target_link_libraries",
-			"INCLUDE_DIRECTORIES"
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -30,7 +29,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 38,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
@@ -54,7 +53,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 60,
+				"line" : 57,
 				"parent" : 0
 			},
 			{
@@ -62,12 +61,6 @@
 				"file" : 0,
 				"line" : 524,
 				"parent" : 2
-			},
-			{
-				"command" : 5,
-				"file" : 1,
-				"line" : 4,
-				"parent" : 0
 			}
 		]
 	},
@@ -109,18 +102,6 @@
 				{
 					"backtrace" : 0,
 					"path" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/FinalProject/build-Project-Qt_6_2_2_for_macOS-Debug/Project_autogen/include"
-				},
-				{
-					"backtrace" : 7,
-					"path" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/[AFTER]"
-				},
-				{
-					"backtrace" : 7,
-					"path" : "/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/[SYSTEM]"
-				},
-				{
-					"backtrace" : 7,
-					"path" : "/Users/youssefQt/6.2.2/macos/lib"
 				},
 				{
 					"backtrace" : 6,

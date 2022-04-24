@@ -12,14 +12,15 @@ class Projectile: public QObject, public QGraphicsPixmapItem
     Q_OBJECT
 public:
     Projectile(QString, QString,char type);
+
+public slots:
+    void move();
+private:
     QString direction;
     int row;
     int col;
     int damage;
     char type;
-
-public slots:
-    void move();
 };
 
 #endif // PROJECTILE_H

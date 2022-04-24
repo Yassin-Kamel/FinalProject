@@ -3,23 +3,23 @@
 Map::Map()
 {
 
-    QFile file("map1.txt");
+    QFile file("map.txt");
     file.open(QIODevice::ReadOnly);
     QTextStream stream(&file);
     QString temp;
     int i = 0;
     int j = 0;
-    map1.push_back(QVector<int>());
-    while(!stream.atEnd() && j<map1.size())
+    map.push_back(QVector<int>());
+    while(!stream.atEnd() && j<map.size())
     {
         stream>>temp;
-        map1.push_back(QVector<int>());
+        map.push_back(QVector<int>());
         if(temp!="#")
         {
             if(temp != "x")
-                map1[i].push_back(temp.toInt());
+                map[i].push_back(temp.toInt());
             else
-                map1[i].push_back(88);
+                map[i].push_back(88);
         }
         else
         {
@@ -82,10 +82,10 @@ Map::Map()
     sandWall = sandWall.scaled(100,120);
     sandPath = sandPath.scaled(135,67);
     sandPathWithBush = sandPathWithBush.scaled(135,67);
-    for(int i = 0;i<map1.size();i++)
+    for(int i = 0;i<map.size();i++)
     {
         items.push_back(QVector<Item*>());
-        for(int j = 0;j<map1[i].size();j++)
+        for(int j = 0;j<map[i].size();j++)
         {
             Item *temp = new Item;
             items[i].push_back(temp);
@@ -93,10 +93,10 @@ Map::Map()
     }
 
 
-    for(int i = 0;i<map1.size();i++)
-        for(int j = 0;j<map1[i].size();j++)
+    for(int i = 0;i<map.size();i++)
+        for(int j = 0;j<map[i].size();j++)
         {
-            if(map1[i][j] == -1)
+            if(map[i][j] == -1)
             {
                 if(j<13 && i<13)
                 {
@@ -117,7 +117,7 @@ Map::Map()
                 items[i][j]->isObstacle = true;
             }
 
-            else if(map1[i][j] == -2)
+            else if(map[i][j] == -2)
             {
                 if(j<13 && i<13)
                 {
@@ -138,7 +138,7 @@ Map::Map()
                     items[i][j]->isObstacle = true;
                 }
             }
-            else if(map1[i][j]==0)
+            else if(map[i][j]==0)
             {
                 if(j<13 && i<13)
                 {
@@ -158,7 +158,7 @@ Map::Map()
 
                 items[i][j]->isObstacle = false;
             }
-            else if(map1[i][j]==-3)
+            else if(map[i][j]==-3)
             {
                 if(j<13 && i<13)
                 {
@@ -178,19 +178,19 @@ Map::Map()
 
                 items[i][j]->isObstacle = true;
             }
-            else if(map1[i][j]==-4)
+            else if(map[i][j]==-4)
             {
                 items[i][j]->pixmap.setPixmap(tunnel);
                 items[i][j]->pixmap.setPos(30*j,30*i);
                 items[i][j]->isObstacle = true;
             }
-            else if(map1[i][j]==-6)
+            else if(map[i][j]==-6)
             {
                 items[i][j]->pixmap.setPixmap(torch);
                 items[i][j]->pixmap.setPos(7+30*j,30*i-5);
                 items[i][j]->isObstacle = true;
             }
-            else if(map1[i][j] == -5)
+            else if(map[i][j] == -5)
             {
                 if(j<13 && i<13)
                 {
@@ -209,7 +209,7 @@ Map::Map()
                 }
                 items[i][j]->isObstacle = true;
             }
-            else if(map1[i][j]==-7)
+            else if(map[i][j]==-7)
             {
                 if(j>12)
                 {
@@ -224,19 +224,19 @@ Map::Map()
                     items[i][j]->isObstacle = true;
                 }
             }
-            else if(map1[i][j]==-8)
+            else if(map[i][j]==-8)
             {
                 items[i][j]->pixmap.setPixmap(smallPyramid);
                 items[i][j]->pixmap.setPos(30*j+5,30*i-30-10);
                 items[i][j]->isObstacle = true;
             }
-            else if(map1[i][j]==-9)
+            else if(map[i][j]==-9)
             {
                 items[i][j]->pixmap.setPixmap(sandPathWithBush);
                 items[i][j]->pixmap.setPos(30*j+7,30*i+12);
                 items[i][j]->isObstacle = false;
             }
-            else if(map1[i][j] == 88)
+            else if(map[i][j] == 88)
                 items[i][j]->isObstacle = true;
 
             items[i][j]->col = j;

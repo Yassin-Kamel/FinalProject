@@ -16,7 +16,7 @@ class Map: public QObject, public QGraphicsPixmapItem
     Q_OBJECT
 public:
     Map();
-    QVector<QVector<int>> map1;
+    QVector<QVector<int>> map;
     struct Item
     {
         QGraphicsPixmapItem pixmap;

@@ -106,10 +106,9 @@ public:
     QSpacerItem *verticalSpacer_6;
     QWidget *page_4;
     QVBoxLayout *verticalLayout_7;
-    QVBoxLayout *verticalLayout_3;
     QSpacerItem *verticalSpacer_9;
+    QVBoxLayout *verticalLayout_3;
     QLabel *label_settings;
-    QSpacerItem *verticalSpacer_11;
     QHBoxLayout *horizontalLayout_11;
     QSpacerItem *horizontalSpacer_26;
     QLabel *label_2;
@@ -120,13 +119,18 @@ public:
     QLabel *label_3;
     QPushButton *soundEffectsButton;
     QSpacerItem *horizontalSpacer_27;
-    QSpacerItem *verticalSpacer_12;
+    QHBoxLayout *horizontalLayout_18;
+    QSpacerItem *horizontalSpacer_33;
+    QLabel *label_4;
+    QLabel *label_score;
+    QSpacerItem *horizontalSpacer_34;
+    QSpacerItem *verticalSpacer_10;
     QHBoxLayout *horizontalLayout_12;
     QSpacerItem *horizontalSpacer_29;
     QPushButton *logoutButton;
     QPushButton *backButton_2;
     QSpacerItem *horizontalSpacer_30;
-    QSpacerItem *verticalSpacer_10;
+    QSpacerItem *verticalSpacer_8;
     QWidget *page_5;
     QVBoxLayout *verticalLayout_8;
     QSpacerItem *verticalSpacer_14;
@@ -135,21 +139,35 @@ public:
     QLabel *label_login_2;
     QSpacerItem *verticalSpacer_15;
     QHBoxLayout *horizontalLayout_14;
-    QPushButton *pushButton_2;
+    QPushButton *restartButton;
     QHBoxLayout *horizontalLayout_15;
     QSpacerItem *horizontalSpacer_31;
-    QPushButton *pushButton;
+    QPushButton *mainMenuButton;
     QSpacerItem *horizontalSpacer_32;
     QHBoxLayout *horizontalLayout_17;
-    QPushButton *pushButton_3;
+    QPushButton *settingsButton_2;
     QSpacerItem *verticalSpacer_13;
+    QWidget *page_6;
+    QVBoxLayout *verticalLayout_10;
+    QSpacerItem *verticalSpacer_12;
+    QVBoxLayout *verticalLayout_9;
+    QLabel *label_5;
+    QSpacerItem *verticalSpacer_11;
+    QPushButton *continueButton;
+    QPushButton *restartButton_2;
+    QHBoxLayout *horizontalLayout_19;
+    QSpacerItem *horizontalSpacer_35;
+    QPushButton *setttingButton_3;
+    QPushButton *mainMenuButton_2;
+    QSpacerItem *horizontalSpacer_36;
+    QSpacerItem *verticalSpacer_16;
     QMenuBar *menubar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(881, 684);
+        MainWindow->resize(754, 593);
         MainWindow->setAutoFillBackground(false);
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgba(0, 0, 0, 40);"));
         centralwidget = new QWidget(MainWindow);
@@ -622,12 +640,12 @@ public:
         page_4->setObjectName(QString::fromUtf8("page_4"));
         verticalLayout_7 = new QVBoxLayout(page_4);
         verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
-        verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         verticalSpacer_9 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        verticalLayout_3->addItem(verticalSpacer_9);
+        verticalLayout_7->addItem(verticalSpacer_9);
 
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         label_settings = new QLabel(page_4);
         label_settings->setObjectName(QString::fromUtf8("label_settings"));
         label_settings->setFont(font);
@@ -639,10 +657,6 @@ public:
         label_settings->setAlignment(Qt::AlignCenter);
 
         verticalLayout_3->addWidget(label_settings, 0, Qt::AlignHCenter|Qt::AlignVCenter);
-
-        verticalSpacer_11 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_3->addItem(verticalSpacer_11);
 
         horizontalLayout_11 = new QHBoxLayout();
         horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
@@ -711,9 +725,36 @@ public:
 
         verticalLayout_3->addLayout(horizontalLayout_13);
 
-        verticalSpacer_12 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        horizontalLayout_18 = new QHBoxLayout();
+        horizontalLayout_18->setObjectName(QString::fromUtf8("horizontalLayout_18"));
+        horizontalSpacer_33 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        verticalLayout_3->addItem(verticalSpacer_12);
+        horizontalLayout_18->addItem(horizontalSpacer_33);
+
+        label_4 = new QLabel(page_4);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setStyleSheet(QString::fromUtf8("font: 700 24pt \"Baskerville\";\n"
+"color: rgb(255, 255, 255);"));
+
+        horizontalLayout_18->addWidget(label_4, 0, Qt::AlignRight|Qt::AlignVCenter);
+
+        label_score = new QLabel(page_4);
+        label_score->setObjectName(QString::fromUtf8("label_score"));
+        label_score->setStyleSheet(QString::fromUtf8("font: 700 24pt \"Baskerville\";\n"
+"color: rgb(255, 255, 255);"));
+
+        horizontalLayout_18->addWidget(label_score, 0, Qt::AlignLeft|Qt::AlignVCenter);
+
+        horizontalSpacer_34 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_18->addItem(horizontalSpacer_34);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_18);
+
+        verticalSpacer_10 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_3->addItem(verticalSpacer_10);
 
         horizontalLayout_12 = new QHBoxLayout();
         horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
@@ -756,12 +797,12 @@ public:
 
         verticalLayout_3->addLayout(horizontalLayout_12);
 
-        verticalSpacer_10 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_3->addItem(verticalSpacer_10);
-
 
         verticalLayout_7->addLayout(verticalLayout_3);
+
+        verticalSpacer_8 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_7->addItem(verticalSpacer_8);
 
         stackedWidget->addWidget(page_4);
         page_5 = new QWidget();
@@ -786,7 +827,7 @@ public:
         label_login_2->setLineWidth(0);
         label_login_2->setAlignment(Qt::AlignCenter);
 
-        horizontalLayout_16->addWidget(label_login_2);
+        horizontalLayout_16->addWidget(label_login_2, 0, Qt::AlignHCenter);
 
 
         verticalLayout->addLayout(horizontalLayout_16);
@@ -797,11 +838,11 @@ public:
 
         horizontalLayout_14 = new QHBoxLayout();
         horizontalLayout_14->setObjectName(QString::fromUtf8("horizontalLayout_14"));
-        pushButton_2 = new QPushButton(page_5);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setMinimumSize(QSize(200, 50));
-        pushButton_2->setMaximumSize(QSize(200, 16777215));
-        pushButton_2->setStyleSheet(QString::fromUtf8("QPushButton{background-color:grey;\n"
+        restartButton = new QPushButton(page_5);
+        restartButton->setObjectName(QString::fromUtf8("restartButton"));
+        restartButton->setMinimumSize(QSize(200, 50));
+        restartButton->setMaximumSize(QSize(200, 16777215));
+        restartButton->setStyleSheet(QString::fromUtf8("QPushButton{background-color:grey;\n"
 "	font: 700 22pt \"Baskerville\";\n"
 "border: 3px solid rgb(0,80,0);\n"
 "border-radius: 17px;\n"
@@ -809,7 +850,7 @@ public:
 "font-size: 22px;}\n"
 "QPushButton:hover { background-color:rgb(0, 80, 0);}"));
 
-        horizontalLayout_14->addWidget(pushButton_2);
+        horizontalLayout_14->addWidget(restartButton);
 
 
         verticalLayout->addLayout(horizontalLayout_14);
@@ -820,11 +861,11 @@ public:
 
         horizontalLayout_15->addItem(horizontalSpacer_31);
 
-        pushButton = new QPushButton(page_5);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setMinimumSize(QSize(200, 50));
-        pushButton->setMaximumSize(QSize(230, 16777215));
-        pushButton->setStyleSheet(QString::fromUtf8("QPushButton{background-color:grey;\n"
+        mainMenuButton = new QPushButton(page_5);
+        mainMenuButton->setObjectName(QString::fromUtf8("mainMenuButton"));
+        mainMenuButton->setMinimumSize(QSize(200, 50));
+        mainMenuButton->setMaximumSize(QSize(230, 16777215));
+        mainMenuButton->setStyleSheet(QString::fromUtf8("QPushButton{background-color:grey;\n"
 "	font: 700 22pt \"Baskerville\";\n"
 "border: 3px solid rgb(0,80,0);\n"
 "border-radius: 17px;\n"
@@ -832,7 +873,7 @@ public:
 "font-size: 22px;}\n"
 "QPushButton:hover { background-color:rgb(0,80,0);}"));
 
-        horizontalLayout_15->addWidget(pushButton);
+        horizontalLayout_15->addWidget(mainMenuButton);
 
         horizontalSpacer_32 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -843,11 +884,11 @@ public:
 
         horizontalLayout_17 = new QHBoxLayout();
         horizontalLayout_17->setObjectName(QString::fromUtf8("horizontalLayout_17"));
-        pushButton_3 = new QPushButton(page_5);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setMinimumSize(QSize(0, 50));
-        pushButton_3->setMaximumSize(QSize(200, 16777215));
-        pushButton_3->setStyleSheet(QString::fromUtf8("QPushButton{background-color:grey;\n"
+        settingsButton_2 = new QPushButton(page_5);
+        settingsButton_2->setObjectName(QString::fromUtf8("settingsButton_2"));
+        settingsButton_2->setMinimumSize(QSize(0, 50));
+        settingsButton_2->setMaximumSize(QSize(200, 16777215));
+        settingsButton_2->setStyleSheet(QString::fromUtf8("QPushButton{background-color:grey;\n"
 "	font: 700 22pt \"Baskerville\";\n"
 "border: 3px solid rgb(0,80,0);\n"
 "border-radius: 17px;\n"
@@ -855,7 +896,7 @@ public:
 "font-size: 22px;}\n"
 "QPushButton:hover { background-color:rgb(0,80,0);}"));
 
-        horizontalLayout_17->addWidget(pushButton_3);
+        horizontalLayout_17->addWidget(settingsButton_2);
 
 
         verticalLayout->addLayout(horizontalLayout_17);
@@ -868,18 +909,115 @@ public:
         verticalLayout_8->addItem(verticalSpacer_13);
 
         stackedWidget->addWidget(page_5);
+        page_6 = new QWidget();
+        page_6->setObjectName(QString::fromUtf8("page_6"));
+        verticalLayout_10 = new QVBoxLayout(page_6);
+        verticalLayout_10->setObjectName(QString::fromUtf8("verticalLayout_10"));
+        verticalSpacer_12 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_10->addItem(verticalSpacer_12);
+
+        verticalLayout_9 = new QVBoxLayout();
+        verticalLayout_9->setObjectName(QString::fromUtf8("verticalLayout_9"));
+        label_5 = new QLabel(page_6);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setStyleSheet(QString::fromUtf8("font: 700 40pt \"Baskerville\";\n"
+"color: rgb(255, 255, 255);"));
+
+        verticalLayout_9->addWidget(label_5, 0, Qt::AlignHCenter|Qt::AlignVCenter);
+
+        verticalSpacer_11 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_9->addItem(verticalSpacer_11);
+
+        continueButton = new QPushButton(page_6);
+        continueButton->setObjectName(QString::fromUtf8("continueButton"));
+        continueButton->setMinimumSize(QSize(200, 0));
+        continueButton->setMaximumSize(QSize(200, 16777215));
+        continueButton->setStyleSheet(QString::fromUtf8("QPushButton{background-color:grey;\n"
+"	font: 700 22pt \"Baskerville\";\n"
+"border: 3px solid rgb(0,80,0);\n"
+"border-radius: 17px;\n"
+"padding: 0 10px;\n"
+"font-size: 22px;}\n"
+"QPushButton:hover { background-color:rgb(0, 80, 0);}"));
+
+        verticalLayout_9->addWidget(continueButton, 0, Qt::AlignHCenter);
+
+        restartButton_2 = new QPushButton(page_6);
+        restartButton_2->setObjectName(QString::fromUtf8("restartButton_2"));
+        restartButton_2->setMinimumSize(QSize(200, 0));
+        restartButton_2->setMaximumSize(QSize(200, 16777215));
+        restartButton_2->setStyleSheet(QString::fromUtf8("QPushButton{background-color:grey;\n"
+"	font: 700 22pt \"Baskerville\";\n"
+"border: 3px solid rgb(0,80,0);\n"
+"border-radius: 17px;\n"
+"padding: 0 10px;\n"
+"font-size: 22px;}\n"
+"QPushButton:hover { background-color:rgb(0, 80, 0);}"));
+
+        verticalLayout_9->addWidget(restartButton_2, 0, Qt::AlignHCenter);
+
+        horizontalLayout_19 = new QHBoxLayout();
+        horizontalLayout_19->setObjectName(QString::fromUtf8("horizontalLayout_19"));
+        horizontalSpacer_35 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_19->addItem(horizontalSpacer_35);
+
+        setttingButton_3 = new QPushButton(page_6);
+        setttingButton_3->setObjectName(QString::fromUtf8("setttingButton_3"));
+        setttingButton_3->setMinimumSize(QSize(146, 0));
+        setttingButton_3->setMaximumSize(QSize(150, 16777215));
+        setttingButton_3->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(0,80,0);\n"
+"	font: 700 22pt \"Baskerville\";\n"
+"border: 3px solid grey;\n"
+"border-radius: 17px;\n"
+"padding: 0 10px;\n"
+"font-size: 22px;}\n"
+"QPushButton:hover { background-color:grey;}"));
+
+        horizontalLayout_19->addWidget(setttingButton_3, 0, Qt::AlignRight);
+
+        mainMenuButton_2 = new QPushButton(page_6);
+        mainMenuButton_2->setObjectName(QString::fromUtf8("mainMenuButton_2"));
+        mainMenuButton_2->setMaximumSize(QSize(150, 16777215));
+        mainMenuButton_2->setStyleSheet(QString::fromUtf8("QPushButton{background-color:rgb(0,80,0);\n"
+"	font: 700 22pt \"Baskerville\";\n"
+"border: 3px solid grey;\n"
+"border-radius: 17px;\n"
+"padding: 0 10px;\n"
+"font-size: 22px;}\n"
+"QPushButton:hover { background-color:grey;}"));
+
+        horizontalLayout_19->addWidget(mainMenuButton_2, 0, Qt::AlignLeft);
+
+        horizontalSpacer_36 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_19->addItem(horizontalSpacer_36);
+
+
+        verticalLayout_9->addLayout(horizontalLayout_19);
+
+
+        verticalLayout_10->addLayout(verticalLayout_9);
+
+        verticalSpacer_16 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_10->addItem(verticalSpacer_16);
+
+        stackedWidget->addWidget(page_6);
 
         verticalLayout_5->addWidget(stackedWidget);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 881, 21));
+        menubar->setGeometry(QRect(0, 0, 754, 21));
         MainWindow->setMenuBar(menubar);
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -912,12 +1050,19 @@ public:
         musicButton->setText(QCoreApplication::translate("MainWindow", "ON", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Sound Effects :   ", nullptr));
         soundEffectsButton->setText(QCoreApplication::translate("MainWindow", "ON", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "Games Won : ", nullptr));
+        label_score->setText(QString());
         logoutButton->setText(QCoreApplication::translate("MainWindow", "Logout", nullptr));
         backButton_2->setText(QCoreApplication::translate("MainWindow", "Back", nullptr));
         label_login_2->setText(QCoreApplication::translate("MainWindow", "Game Over!", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Restart?", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Main Menu", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Settings", nullptr));
+        restartButton->setText(QCoreApplication::translate("MainWindow", "Restart?", nullptr));
+        mainMenuButton->setText(QCoreApplication::translate("MainWindow", "Main Menu", nullptr));
+        settingsButton_2->setText(QCoreApplication::translate("MainWindow", "Settings", nullptr));
+        label_5->setText(QCoreApplication::translate("MainWindow", "Game Paused", nullptr));
+        continueButton->setText(QCoreApplication::translate("MainWindow", "Continue", nullptr));
+        restartButton_2->setText(QCoreApplication::translate("MainWindow", "Restart", nullptr));
+        setttingButton_3->setText(QCoreApplication::translate("MainWindow", "Settings", nullptr));
+        mainMenuButton_2->setText(QCoreApplication::translate("MainWindow", "Main Menu", nullptr));
     } // retranslateUi
 
 };

@@ -14,6 +14,30 @@ class Enemy: public QObject, public QGraphicsPixmapItem
     Q_OBJECT
 public:
     Enemy(QVector<QVector<Map::Item*>>,QGraphicsScene *scene,QString enemyName,int type,int damage,int room);
+    bool obstacleInBetween();
+    QGraphicsScene *tempScene;
+    QVector<QVector<Map::Item*>> paths;
+    int getRows();
+    int getCols();
+    int getHealth();
+    int getDamage();
+    int getType();
+    int getRoom();
+    QString getName();
+    QGraphicsTextItem *getHealthStatus();
+    void setRows(int r);
+    void setCols(int c);
+    void setHealth(int h);
+    void setDamage(int d);
+    void setType(int t);
+    void setRoom(int r);
+    void setHealthStatus(int h);
+    void setName(QString s);
+    ~Enemy();
+public slots:
+    void move();
+
+private:
     int rows;
     int cols;
     int health;
@@ -22,12 +46,6 @@ public:
     int room;
     QGraphicsTextItem *healthStatus;
     QString name;
-    bool obstacleInBetween();
-    QGraphicsScene *tempScene;
-    QVector<QVector<Map::Item*>> paths;
-    ~Enemy();
-public slots:
-    void move();
 };
 
 #endif // ENEMY_H

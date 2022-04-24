@@ -13,16 +13,25 @@ class Player: public QObject, public QGraphicsPixmapItem
     Q_OBJECT
 public:
     Player(QVector<QVector<int>>,QGraphicsScene *);
-    int health;
-    int rows;
-    int cols;
-    QGraphicsTextItem *healthStatus;
+    int getRows();
+    int getCols();
+    int getHealth();
+    QGraphicsTextItem *getHealthStatus();
+    void setRows(int r);
+    void setCols(int c);
+    void setHealth(int h);
+    void setHealthStatus(int h);
+    ~Player();
 private:
 
     QVector<QVector<int>> data;
     QGraphicsScene *temp_scene;
     char direction;
     bool active;
+    int health;
+    int rows;
+    int cols;
+    QGraphicsTextItem *healthStatus;
 
 public slots:
     void keyPressEvent(QKeyEvent *event);

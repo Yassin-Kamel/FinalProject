@@ -1,4 +1,3 @@
-youssef rami
-noha rafla
-carine carine
+youssef rami 0 1 1
+noha rafla 0 1 1
 >

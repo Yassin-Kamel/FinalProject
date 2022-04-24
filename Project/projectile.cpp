@@ -44,7 +44,7 @@ Projectile::Projectile(QString filename,QString direction,char type)
 
 void Projectile::move()
 {
-    if(game->active)
+    if(game->isActive())
     {
         QList<QGraphicsItem*> colliding_items = collidingItems();
         for (int i = 0, n = colliding_items.size(); i < n; ++i)
@@ -56,17 +56,21 @@ void Projectile::move()
                     for(int j = 0;j<game->enemies1.size();j++)
                         if(colliding_items[i] == game->enemies1[j])
                         {
-                            game->enemies1[j]->health-=damage;
-                            game->enemies1[j]->healthStatus->setPlainText(QString::number(game->enemies1[j]->health));
-                            if(game->enemies1[j]->health<=0)
+                            game->enemies1[j]->setHealth(game->enemies1[j]->getHealth()-damage);
+                            game->enemies1[j]->getHealthStatus()->setPlainText(QString::number(game->enemies1[j]->getHealth()));
+                            if(game->enemies1[j]->getHealth()<=0)
                             {
                                 game->enemies1.erase(game->enemies1.begin()+j,game->enemies1.end()-(game->enemies1.size()-j)+1);
                                 if(game->enemies1.size() == 0)
                                 {
+                                    game->p->setHealth(game->p->getHealth()+20);
+                                    if(game->p->getHealth() > 100)
+                                        game->p->setHealth(100);
+                                    game->p->getHealthStatus()->setPlainText(QString::number(game->p->getHealth()));
                                     for(int i = 0;i<game->map->items.size();i++)
                                         for(int j = 0;j<game->map->items[i].size();j++)
                                         {
-                                            if(game->map->map1[i][j] == -4 && j<15 && i<10)
+                                            if(game->map->map[i][j] == -4 && j<15 && i<10)
                                             {
                                                 game->map->items[i][j]->isObstacle = false;
                                             }
@@ -81,19 +85,23 @@ void Projectile::move()
                     for(int j = 0;j<game->enemies2.size();j++)
                         if(colliding_items[i] == game->enemies2[j])
                         {
-                            if(!game->map->items[game->enemies2[j]->rows][game->enemies2[j]->cols]->isObstacle)
+                            if(!game->map->items[game->enemies2[j]->getRows()][game->enemies2[j]->getCols()]->isObstacle)
                             {
-                                game->enemies2[j]->health-=damage;
-                                game->enemies2[j]->healthStatus->setPlainText(QString::number(game->enemies2[j]->health));
-                                if(game->enemies2[j]->health<=0)
+                                game->enemies2[j]->setHealth(game->enemies2[j]->getHealth()-damage);
+                                game->enemies2[j]->getHealthStatus()->setPlainText(QString::number(game->enemies2[j]->getHealth()));
+                                if(game->enemies2[j]->getHealth()<=0)
                                 {
                                     game->enemies2.erase(game->enemies2.begin()+j,game->enemies2.end()-(game->enemies2.size()-j)+1);
                                     if(game->enemies2.size() == 0)
                                     {
+                                        game->p->setHealth(game->p->getHealth()+35);
+                                        if(game->p->getHealth() > 100)
+                                            game->p->setHealth(100);
+                                        game->p->getHealthStatus()->setPlainText(QString::number(game->p->getHealth()));
                                         for(int i = 0;i<game->map->items.size();i++)
                                             for(int j = 0;j<game->map->items[i].size();j++)
                                             {
-                                                if(game->map->map1[i][j] == -4 && j>9 && i<=18)
+                                                if(game->map->map[i][j] == -4 && j>9 && i<=18)
                                                 {
                                                     game->map->items[i][j]->isObstacle = false;
                                                 }
@@ -109,19 +117,21 @@ void Projectile::move()
                     for(int j = 0;j<game->enemies3.size();j++)
                         if(colliding_items[i] == game->enemies3[j])
                         {
-                            if(!game->map->items[game->enemies3[j]->rows][game->enemies3[j]->cols]->isObstacle)
+                            if(!game->map->items[game->enemies3[j]->getRows()][game->enemies3[j]->getCols()]->isObstacle)
                             {
-                                game->enemies3[j]->health-=damage;
-                                game->enemies3[j]->healthStatus->setPlainText(QString::number(game->enemies3[j]->health));
-                                if(game->enemies3[j]->health<=0)
+                                game->enemies3[j]->setHealth(game->enemies3[j]->getHealth()-damage);
+                                game->enemies3[j]->getHealthStatus()->setPlainText(QString::number(game->enemies3[j]->getHealth()));
+                                if(game->enemies3[j]->getHealth()<=0)
                                 {
                                     game->enemies3.erase(game->enemies3.begin()+j,game->enemies3.end()-(game->enemies3.size()-j)+1);
                                     if(game->enemies3.size() == 0)
                                     {
+                                        game->p->setHealth(100);
+                                        game->p->getHealthStatus()->setPlainText(QString::number(game->p->getHealth()));
                                         for(int i = 0;i<game->map->items.size();i++)
                                             for(int j = 0;j<game->map->items[i].size();j++)
                                             {
-                                                if(game->map->map1[i][j] == -4 && j>14 && i>24)
+                                                if(game->map->map[i][j] == -4 && j>14 && i>24)
                                                 {
                                                     game->map->items[i][j]->isObstacle = false;
                                                 }
@@ -135,21 +145,19 @@ void Projectile::move()
                 delete this;
                 return;
             }
-            else if(typeid(*(colliding_items[i])) == typeid(game->map->items[0][0]->pixmap) && game->map->items[row][col]->isObstacle && game->map->map1[row][col] != -2)
+            else if(typeid(*(colliding_items[i])) == typeid(game->map->items[0][0]->pixmap) && game->map->items[row][col]->isObstacle && game->map->map[row][col] != -2)
             {
                 delete this;
                 return;
             }
             else if(typeid(*(colliding_items[i])) == typeid(Player) && type == 'e')
             {
-                game->p->health-=damage;
-                game->p->healthStatus->setPlainText(QString::number(game->p->health));
-                if(game->p->health<=0)
+                game->p->setHealth(game->p->getHealth()-damage);
+                game->p->getHealthStatus()->setPlainText(QString::number(game->p->getHealth()));
+                if(game->p->getHealth()<=0)
                 {
-                    game->active = false;
-                    delete game->p->healthStatus;
                     delete colliding_items[i];
-                    w->gameIsNotActive();
+                    w->gameOver();
                 }
                 delete this;
                 return;

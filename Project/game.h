@@ -23,8 +23,12 @@ public:
     QVector<Enemy*> enemies2;
     QVector<Enemy*> enemies3;
     Map *map;
-    bool active;
     void setActive();
+    void restart();
+    bool isActive();
+    void set_active(bool);
+private:
+    bool active;
 };
 
 #endif // GAME_H

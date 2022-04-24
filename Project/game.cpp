@@ -20,7 +20,7 @@ Game::Game()
 
 void Game::setActive()
 {
-    p = new Player(map->map1,scene);
+    map = new Map;
     scene->addItem(p);
     p->setFlag(QGraphicsPixmapItem::ItemIsFocusable);
     p->setFocus();
@@ -47,4 +47,38 @@ void Game::setActive()
     for(int i =0;i<enemies3.size();i++)
         scene->addItem(enemies3[i]);
     active = true;
+}
+
+void Game::restart()
+{
+    map = new Map;
+    for(int i =0;i<enemies1.size();i++)
+    {
+        delete enemies1[i];
+    }
+    for(int i =0;i<enemies2.size();i++)
+    {
+        delete enemies2[i];
+    }
+    for(int i =0;i<enemies3.size();i++)
+    {
+        delete enemies3[i];
+    }
+    enemies1.clear();
+    enemies2.clear();
+    enemies3.clear();
+
+    p = new Player(map->map,scene);
+    setWindowState(Qt::WindowFullScreen);
+    setActive();
+}
+
+bool Game::isActive()
+{
+    return active;
+}
+
+void Game::set_active(bool act)
+{
+    active = act;
 }

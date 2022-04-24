@@ -1,6 +1,8 @@
 #include "player.h"
 #include "game.h"
+#include "mainwindow.h"
 extern Game *game;
+extern MainWindow *w;
 
 Player::Player(QVector<QVector<int>> dataItem, QGraphicsScene *scene)
 {
@@ -28,9 +30,54 @@ Player::Player(QVector<QVector<int>> dataItem, QGraphicsScene *scene)
     temp_scene->addItem(healthStatus);
 }
 
+int Player::getRows()
+{
+    return rows;
+}
+
+int Player::getCols()
+{
+    return cols;
+}
+
+int Player::getHealth()
+{
+    return health;
+}
+
+QGraphicsTextItem* Player::getHealthStatus()
+{
+    return healthStatus;
+}
+
+void Player::setRows(int r)
+{
+    rows = r;
+}
+
+void Player::setCols(int c)
+{
+    cols = c;
+}
+
+void Player::setHealth(int h)
+{
+    health = h;
+}
+
+void Player::setHealthStatus(int h)
+{
+    healthStatus->setPlainText(QString::number(h));
+}
+
+Player::~Player()
+{
+    delete healthStatus;
+}
+
 void Player::keyPressEvent(QKeyEvent *event)
 {
-    if(game->active)
+    if(game->isActive())
     {
         QPixmap p;
         if(event->key()==Qt::Key_Up)
@@ -142,6 +189,10 @@ void Player::keyPressEvent(QKeyEvent *event)
                 timer->singleShot(1000,this,SLOT(setActive()));
              }
           }
+        else if(event->key() == Qt::Key_P)
+        {
+            w->gamePaused();
+        }
          healthStatus->setPos(x()+20,y()-5);
          this->setFlag(QGraphicsPixmapItem::ItemIsFocusable);
          this->setFocus();

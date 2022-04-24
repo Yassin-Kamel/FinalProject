@@ -1,8 +1,10 @@
 #include "enemy.h"
 #include "game.h"
 #include "player.h"
+#include "mainwindow.h"
 #include <QDebug>
 extern Game*game;
+extern MainWindow *w;
 
 Enemy::Enemy(QVector<QVector<Map::Item*>> mapData,QGraphicsScene *scene,QString enemyName,int typ,int dmg,int room)
 {
@@ -106,11 +108,11 @@ Enemy::Enemy(QVector<QVector<Map::Item*>> mapData,QGraphicsScene *scene,QString 
 bool Enemy::obstacleInBetween()
 {
     bool temp = false;
-    if(rows == game->p->rows && game->active)
+    if(rows == game->p->getRows() && game->isActive())
     {
-        if(cols>game->p->cols)
+        if(cols>game->p->getCols())
         {
-            for(int i = game->p->cols;i<cols;i++)
+            for(int i = game->p->getCols();i<cols;i++)
             {
                 if(game->map->items[rows][i]->isObstacle)
                 {
@@ -118,9 +120,9 @@ bool Enemy::obstacleInBetween()
                 }
             }
         }
-        if(cols<game->p->cols)
+        if(cols<game->p->getCols())
         {
-            for(int i = cols+1;i<game->p->cols;i++)
+            for(int i = cols+1;i<game->p->getCols();i++)
             {
                 if(game->map->items[rows][i]->isObstacle)
                 {
@@ -129,11 +131,11 @@ bool Enemy::obstacleInBetween()
             }
         }
     }
-    else if(cols == game->p->cols && game->active)
+    else if(cols == game->p->getCols() && game->isActive())
     {
-        if(rows>game->p->rows)
+        if(rows>game->p->getRows())
         {
-            for(int i = game->p->rows;i<rows;i++)
+            for(int i = game->p->getRows();i<rows;i++)
             {
                 if(game->map->items[i][cols]->isObstacle)
                 {
@@ -141,9 +143,9 @@ bool Enemy::obstacleInBetween()
                 }
             }
         }
-        if(rows<game->p->rows)
+        if(rows<game->p->getRows())
         {
-            for(int i = rows;i<game->p->rows;i++)
+            for(int i = rows+1;i<game->p->getRows();i++)
             {
                 if(game->map->items[i][cols]->isObstacle)
                 {
@@ -155,6 +157,86 @@ bool Enemy::obstacleInBetween()
     return temp;
 }
 
+int Enemy::getRows()
+{
+    return rows;
+}
+
+int Enemy::getCols()
+{
+    return cols;
+}
+
+int Enemy::getHealth()
+{
+    return health;
+}
+
+int Enemy::getDamage()
+{
+    return damage;
+}
+
+int Enemy::getType()
+{
+    return type;
+}
+
+int Enemy::getRoom()
+{
+    return room;
+}
+
+QString Enemy::getName()
+{
+    return name;
+}
+
+QGraphicsTextItem* Enemy::getHealthStatus()
+{
+    return healthStatus;
+}
+
+void Enemy::setRows(int r)
+{
+    rows = r;
+}
+
+void Enemy::setCols(int c)
+{
+    cols = c;
+}
+
+void Enemy::setHealth(int h)
+{
+    health = h;
+}
+
+void Enemy::setDamage(int d)
+{
+    damage = d;
+}
+
+void Enemy::setType(int t)
+{
+    type = t;
+}
+
+void Enemy::setRoom(int r)
+{
+    room = r;
+}
+
+void Enemy::setHealthStatus(int h)
+{
+    healthStatus->setPlainText(QString::number(h));
+}
+
+void Enemy::setName(QString s)
+{
+    name = s;
+}
+
 Enemy::~Enemy()
 {
     delete healthStatus;
@@ -164,18 +246,17 @@ Enemy::~Enemy()
 void Enemy::move()
 {
     QPixmap e;
-    if(game->active)
+    if(game->isActive())
     {
         QVector<char> availablePaths;
-        if(cols == game->p->cols && rows == game->p->rows)
+        if(cols == game->p->getCols() && rows == game->p->getRows())
         {
-            game->p->health-=damage;
-            game->p->healthStatus->setPlainText(QString::number(game->p->health));
-            if(game->p->health<=0)
+            game->p->setHealth(game->p->getHealth()-damage);
+            game->p->getHealthStatus()->setPlainText(QString::number(game->p->getHealth()));
+            if(game->p->getHealth()<=0)
             {
-                game->active = false;
-                delete game->p->healthStatus;
                 delete game->p;
+                w->gameOver();
             }
             return;
         }
@@ -233,7 +314,7 @@ void Enemy::move()
             }
         }
         int destination = rand() % availablePaths.size();
-        if(availablePaths[destination] == 'd' && ((cols != game->p->cols && rows != game->p->rows) || ((cols == game->p->cols || rows == game->p->rows) && obstacleInBetween())))
+        if(availablePaths[destination] == 'd' && ((cols != game->p->getCols() && rows != game->p->getRows()) || ((cols == game->p->getCols() || rows == game->p->getRows()) && obstacleInBetween())))
         {
             tempScene->removeItem(this);
             e.load(name+"Front.png");
@@ -244,7 +325,7 @@ void Enemy::move()
             setPos(x(),y()+30);
             rows++;
         }
-        else if(availablePaths[destination] == 'u' && ((cols != game->p->cols && rows != game->p->rows) || ((cols == game->p->cols || rows == game->p->rows) && obstacleInBetween())))
+        else if(availablePaths[destination] == 'u' && ((cols != game->p->getCols() && rows != game->p->getRows()) || ((cols == game->p->getCols() || rows == game->p->getRows()) && obstacleInBetween())))
         {
             tempScene->removeItem(this);
             e.load(name+"Back.png");
@@ -255,7 +336,7 @@ void Enemy::move()
             setPos(x(),y()-30);
             rows--;
         }
-        else if(availablePaths[destination] == 'r' && ((cols != game->p->cols && rows != game->p->rows) || ((cols == game->p->cols || rows == game->p->rows) && obstacleInBetween())))
+        else if(availablePaths[destination] == 'r' && ((cols != game->p->getCols() && rows != game->p->getRows()) || ((cols == game->p->getCols() || rows == game->p->getRows()) && obstacleInBetween())))
         {
             tempScene->removeItem(this);
             e.load(name+"Right.png");
@@ -266,7 +347,7 @@ void Enemy::move()
             setPos(x()+30,y());
             cols++;
         }
-        else if(availablePaths[destination] == 'l' && ((cols != game->p->cols && rows != game->p->rows) || ((cols == game->p->cols || rows == game->p->rows) && obstacleInBetween())))
+        else if(availablePaths[destination] == 'l' && ((cols != game->p->getCols() && rows != game->p->getRows()) || ((cols == game->p->getCols() || rows == game->p->getRows()) && obstacleInBetween())))
         {
             tempScene->removeItem(this);
             e.load(name+"Left.png");
@@ -279,9 +360,9 @@ void Enemy::move()
         }
     }
 
-    if(rows == game->p->rows && game->active)
+    if(rows == game->p->getRows() && game->isActive())
     {
-        if(cols>game->p->cols)
+        if(cols>game->p->getCols())
         {
             if(!obstacleInBetween())
             {
@@ -318,7 +399,7 @@ void Enemy::move()
                 }
             }
         }
-        if(cols<game->p->cols)
+        if(cols<game->p->getCols())
         {
             if(!obstacleInBetween())
             {
@@ -356,9 +437,9 @@ void Enemy::move()
             }
         }
     }
-    else if(cols == game->p->cols && game->active)
+    else if(cols == game->p->getCols() && game->isActive())
     {
-        if(rows<game->p->rows)
+        if(rows<game->p->getRows())
         {
             if(!obstacleInBetween())
             {
@@ -395,7 +476,7 @@ void Enemy::move()
                 }
             }
         }
-        if(rows>game->p->rows)
+        if(rows>game->p->getRows())
         {
             if(!obstacleInBetween())
             {

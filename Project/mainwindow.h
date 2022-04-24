@@ -9,6 +9,7 @@
 #include "game.h"
 #include <QGraphicsBlurEffect>
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,6 +18,9 @@ struct Creds
 {
     QString username;
     QString password;
+    int score;
+    bool music;
+    bool soundEffects;
 };
 
 class MainWindow : public QMainWindow
@@ -26,8 +30,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     void loadAccounts();
-    void gameIsNotActive();
-    QGraphicsBlurEffect *blur;
+    void gameOver();
+    void gamePaused();
     ~MainWindow();
 
 private slots:
@@ -55,8 +59,28 @@ private slots:
 
     void showGameOver();
 
+    void showGamePaused();
+
+    void on_restartButton_clicked();
+
+
+    void on_mainMenuButton_clicked();
+
+    void on_settingsButton_2_clicked();
+
+    void on_continueButton_clicked();
+
+    void on_restartButton_2_clicked();
+
+    void on_setttingButton_3_clicked();
+
+    void on_mainMenuButton_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     QVector<Creds> creds;
+    QGraphicsBlurEffect *blur;
+    QString currentUsername;
+    int previousWindow;
 };
 #endif // MAINWINDOW_H
