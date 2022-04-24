@@ -69,17 +69,35 @@ Enemy::Enemy(QVector<QVector<Map::Item*>> mapData,QGraphicsScene *scene,QString 
     }
     srand(time(NULL));
     int location = rand() % availablePlaces.size();
-    if(name == "zombie" || name == "ninja")
+    if(name == "zombie")
+    {
+        health = 60;
         setPos(availablePlaces[location]->pixmap.x()-5,availablePlaces[location]->pixmap.y()-40);
+    }
     else if(name == "ghost")
+    {
+        health = 50;
         setPos(availablePlaces[location]->pixmap.x()-5,availablePlaces[location]->pixmap.y()-25);
+    }
     else if(name == "mummy")
+    {
+        health = 35;
         setPos(availablePlaces[location]->pixmap.x()+3,availablePlaces[location]->pixmap.y()-37);
-    health = 100;
+    }
+    else if(name == "eagle")
+    {
+        health = 70;
+        setPos(availablePlaces[location]->pixmap.x()-10,availablePlaces[location]->pixmap.y()-30);
+    }
+    healthStatus = new QGraphicsTextItem;
+    healthStatus->setPos(x()+7,y()-20);
+    healthStatus->setDefaultTextColor(Qt::red);
+    healthStatus->setPlainText(QString::number(health));
+    healthStatus->setFont(QFont("Bakersville",16));
+    tempScene->addItem(healthStatus);
     availablePlaces[location]->isEnemy = true;
     rows = availablePlaces[location]->row;
     cols = availablePlaces[location]->col;
-//    qDebug()<<cols<<rows;
     QTimer *timer = new QTimer;
     connect(timer,SIGNAL(timeout()),this,SLOT(move()));
     timer->start(1500);
@@ -137,6 +155,11 @@ bool Enemy::obstacleInBetween()
     return temp;
 }
 
+Enemy::~Enemy()
+{
+    delete healthStatus;
+}
+
 
 void Enemy::move()
 {
@@ -147,9 +170,11 @@ void Enemy::move()
         if(cols == game->p->cols && rows == game->p->rows)
         {
             game->p->health-=damage;
+            game->p->healthStatus->setPlainText(QString::number(game->p->health));
             if(game->p->health<=0)
             {
                 game->active = false;
+                delete game->p->healthStatus;
                 delete game->p;
             }
             return;
@@ -199,9 +224,9 @@ void Enemy::move()
             {
                 if(rows+1>14 && rows+1<29)
                     availablePaths.push_back('d');
-                if(rows-1<29 && ((rows-1>14 && cols<11)||(rows-1>20 && cols>11)))
+                if(rows-1<29 && ((rows-1>14 && cols<10)||(rows-1>20 && cols>11)))
                     availablePaths.push_back('u');
-                if(cols+1>0 && ((cols+1<11 && rows<19)||(cols+1<16&&rows>20)))
+                if(cols+1>0 && ((cols+1<10 && rows<19)||(cols+1<16&&rows>20)))
                     availablePaths.push_back('r');
                 if(cols-1>0 && cols-1<16)
                     availablePaths.push_back('l');
@@ -279,6 +304,18 @@ void Enemy::move()
                     p->setPos(x()-20,y()+25);
                     game->scene->addItem(p);
                 }
+                else if(name == "mummy")
+                {
+                    p = new Projectile("laserRight_Left.png","left",'e');
+                    p->setPos(x()-20,y()+17);
+                    game->scene->addItem(p);
+                }
+                else if(name == "eagle")
+                {
+                    p = new Projectile("fireball.png","left",'e');
+                    p->setPos(x()-5,y()+22);
+                    game->scene->addItem(p);
+                }
             }
         }
         if(cols<game->p->cols)
@@ -302,6 +339,18 @@ void Enemy::move()
                 {
                     p = new Projectile("blueFireBallRight.png","right",'e');
                     p->setPos(x()+20,y()+20);
+                    game->scene->addItem(p);
+                }
+                else if(name == "mummy")
+                {
+                    p = new Projectile("laserRight_Left.png","right",'e');
+                    p->setPos(x()+10,y()+17);
+                    game->scene->addItem(p);
+                }
+                else if(name == "eagle")
+                {
+                    p = new Projectile("fireball.png","right",'e');
+                    p->setPos(x()+30,y()+22);
                     game->scene->addItem(p);
                 }
             }
@@ -332,6 +381,18 @@ void Enemy::move()
                     p->setPos(x()+10,y()+30);
                     game->scene->addItem(p);
                 }
+                else if(name == "mummy")
+                {
+                    p = new Projectile("laserUp_Down.png","down",'e');
+                    p->setPos(x()+3,y()+25);
+                    game->scene->addItem(p);
+                }
+                else if(name == "eagle")
+                {
+                    p = new Projectile("fireball.png","down",'e');
+                    p->setPos(x()+20,y()+22);
+                    game->scene->addItem(p);
+                }
             }
         }
         if(rows>game->p->rows)
@@ -357,7 +418,20 @@ void Enemy::move()
                     p->setPos(x()+10,y()-10);
                     game->scene->addItem(p);
                 }
+                else if(name == "mummy")
+                {
+                    p = new Projectile("laserUp_Down.png","up",'e');
+                    p->setPos(x()+3,y()-20);
+                    game->scene->addItem(p);
+                }
+                else if(name == "eagle")
+                {
+                    p = new Projectile("fireball.png","up",'e');
+                    p->setPos(x()+20,y()+8);
+                    game->scene->addItem(p);
+                }
             }
         }
    }
+    healthStatus->setPos(x()+7,y()-20);
 }

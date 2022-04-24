@@ -1,8 +1,9 @@
 #include "projectile.h"
 #include "game.h"
 #include "player.h"
+#include "mainwindow.h"
 extern Game *game;
-
+extern MainWindow *w;
 Projectile::Projectile(QString filename,QString direction,char type)
 {
     this->type = type;
@@ -13,12 +14,32 @@ Projectile::Projectile(QString filename,QString direction,char type)
     this->direction = direction;
     QTimer *timer = new QTimer;
     connect(timer,SIGNAL(timeout()),this,SLOT(move()));
-    timer->start(5);
-    row = col = 2;
-    if(type == 'e')
-        damage = 5;
-    else
+    if(filename == "arrowDown.png" || filename == "arrowUp.png" || filename == "arrowLeft.png" || filename == "arrowRight.png")
+    {
+        timer->start(10);
         damage = 20;
+    }
+    else if(filename == "mudBall.png")
+    {
+        timer->start(35);
+        damage = 5;
+    }
+    else if(filename == "fireball.png")
+    {
+        timer->start(15);
+        damage = 10;
+    }
+    else if(filename == "laserUp_Down.png" || filename == "laserRight_Left.png")
+    {
+        timer->start(10);
+        damage = 15;
+    }
+    else if(filename == "blueFireBallDown.png" || filename == "blueFireBallUp.png" || filename == "blueFireBallLeft.png" || filename == "blueFireBallRight.png")
+    {
+        timer->start(30);
+        damage = 10;
+    }
+    row = col = 2;
 }
 
 void Projectile::move()
@@ -36,6 +57,7 @@ void Projectile::move()
                         if(colliding_items[i] == game->enemies1[j])
                         {
                             game->enemies1[j]->health-=damage;
+                            game->enemies1[j]->healthStatus->setPlainText(QString::number(game->enemies1[j]->health));
                             if(game->enemies1[j]->health<=0)
                             {
                                 game->enemies1.erase(game->enemies1.begin()+j,game->enemies1.end()-(game->enemies1.size()-j)+1);
@@ -62,6 +84,7 @@ void Projectile::move()
                             if(!game->map->items[game->enemies2[j]->rows][game->enemies2[j]->cols]->isObstacle)
                             {
                                 game->enemies2[j]->health-=damage;
+                                game->enemies2[j]->healthStatus->setPlainText(QString::number(game->enemies2[j]->health));
                                 if(game->enemies2[j]->health<=0)
                                 {
                                     game->enemies2.erase(game->enemies2.begin()+j,game->enemies2.end()-(game->enemies2.size()-j)+1);
@@ -89,6 +112,7 @@ void Projectile::move()
                             if(!game->map->items[game->enemies3[j]->rows][game->enemies3[j]->cols]->isObstacle)
                             {
                                 game->enemies3[j]->health-=damage;
+                                game->enemies3[j]->healthStatus->setPlainText(QString::number(game->enemies3[j]->health));
                                 if(game->enemies3[j]->health<=0)
                                 {
                                     game->enemies3.erase(game->enemies3.begin()+j,game->enemies3.end()-(game->enemies3.size()-j)+1);
@@ -106,7 +130,6 @@ void Projectile::move()
                                     delete colliding_items[i];
                                 }
                             }
-
                         }
                 }
                 delete this;
@@ -120,10 +143,13 @@ void Projectile::move()
             else if(typeid(*(colliding_items[i])) == typeid(Player) && type == 'e')
             {
                 game->p->health-=damage;
+                game->p->healthStatus->setPlainText(QString::number(game->p->health));
                 if(game->p->health<=0)
                 {
                     game->active = false;
+                    delete game->p->healthStatus;
                     delete colliding_items[i];
+                    w->gameIsNotActive();
                 }
                 delete this;
                 return;
@@ -131,19 +157,19 @@ void Projectile::move()
         }
         if(direction == "up")
         {
-            this->setPos(x(),y()-1);
+            this->setPos(x(),y()-3);
         }
         else if(direction == "down")
         {
-            this->setPos(x(),y()+1);
+            this->setPos(x(),y()+3);
         }
         else if(direction == "right")
         {
-            this->setPos(x()+1,y());
+            this->setPos(x()+3,y());
         }
         else if(direction == "left")
         {
-            this->setPos(x()-1,y());
+            this->setPos(x()-3,y());
         }
         row = (pos().y()+10)/30;
         col = (pos().x()+10)/30;

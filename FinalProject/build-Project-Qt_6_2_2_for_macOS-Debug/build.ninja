@@ -180,7 +180,7 @@ build Project_autogen/timestamp Project_autogen/mocs_compilation.cpp | ${cmake_n
 #############################################
 # Phony custom command for CMakeFiles/Project_autogen_timestamp_deps
 
-build CMakeFiles/Project_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Project_autogen_timestamp_deps: phony /Users/youssefQt/6.2.2/macos/./libexec/moc /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/youssefQt/6.2.2/macos/./libexec/uic /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/QtCore
+build CMakeFiles/Project_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Project_autogen_timestamp_deps: phony /Users/youssefQt/6.2.2/macos/./libexec/uic /Users/youssefQt/6.2.2/macos/lib/QtCore.framework/Versions/A/QtCore /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/youssefQt/6.2.2/macos/./libexec/moc
 
 
 #############################################

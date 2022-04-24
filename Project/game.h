@@ -7,6 +7,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <QGraphicsPixmapItem>
+#include <QGraphicsTextItem>
 #include <QDebug>
 #include "map.h"
 #include "enemy.h"
@@ -23,7 +24,7 @@ public:
     QVector<Enemy*> enemies3;
     Map *map;
     bool active;
-//    QVector<Enemy*> enemies;
+    void setActive();
 };
 
 #endif // GAME_H

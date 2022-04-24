@@ -388,6 +388,7 @@
   /Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsPixmapItem \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
+  /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsTextItem \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
   /Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \

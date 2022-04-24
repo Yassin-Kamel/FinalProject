@@ -749,6 +749,7 @@
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
+/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/projectile.cpp
 /Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/mainwindow.h
  mmc:Q_OBJECT
  mdp:/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/mainwindow.h
@@ -1173,12 +1174,15 @@
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qvector2d.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qvectornd.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h
+ mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsBlurEffect
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsPixmapItem
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene
+ mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsTextItem
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h
+ mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicseffect.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsview.h
@@ -1190,7 +1194,6 @@
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
 /Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/obstacles.h
-/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/projectile.cpp
 /Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/loginwindow.h
  mmc:Q_OBJECT
  mdp:/Users/youssef/Dropbox/My Mac (Youssefs-MacBook-Pro.local)/Desktop/FinalProject/Project/loginwindow.h
@@ -1997,6 +2000,7 @@
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsPixmapItem
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene
+ mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsTextItem
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h
@@ -2402,6 +2406,7 @@
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsPixmapItem
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene
+ mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsTextItem
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow
  mdp:/Users/youssefQt/6.2.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h

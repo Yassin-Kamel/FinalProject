@@ -5,6 +5,7 @@
 #include <QKeyEvent>
 #include <QGraphicsView>
 #include <QGraphicsScene>
+#include <QGraphicsTextItem>
 #include "projectile.h"
 
 class Player: public QObject, public QGraphicsPixmapItem
@@ -15,12 +16,14 @@ public:
     int health;
     int rows;
     int cols;
+    QGraphicsTextItem *healthStatus;
 private:
 
     QVector<QVector<int>> data;
     QGraphicsScene *temp_scene;
     char direction;
     bool active;
+
 public slots:
     void keyPressEvent(QKeyEvent *event);
     void setActive();

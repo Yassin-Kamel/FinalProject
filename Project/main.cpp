@@ -4,14 +4,13 @@
 #include "game.h"
 
 Game *game;
+MainWindow *w;
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-//    MainWindow w;
-//    w.setWindowState(Qt::WindowFullScreen);
-//    w.show();
-    game = new Game();
-    game->show();
+    w = new MainWindow;
+    w->show();
+
     return a.exec();
 }

@@ -20,6 +20,12 @@ Player::Player(QVector<QVector<int>> dataItem, QGraphicsScene *scene)
     direction = 'd';
     active = true;
     health = 100;
+    healthStatus = new QGraphicsTextItem;
+    healthStatus->setPos(x()+20,y()-5);
+    healthStatus->setDefaultTextColor(Qt::white);
+    healthStatus->setPlainText("100");
+    healthStatus->setFont(QFont("Bakersville",16));
+    temp_scene->addItem(healthStatus);
 }
 
 void Player::keyPressEvent(QKeyEvent *event)
@@ -43,7 +49,6 @@ void Player::keyPressEvent(QKeyEvent *event)
             {
                 rows--;
                 setPos(x(),y()-30);
-
             }
          }
          else if(event->key()==Qt::Key_Down)
@@ -137,6 +142,7 @@ void Player::keyPressEvent(QKeyEvent *event)
                 timer->singleShot(1000,this,SLOT(setActive()));
              }
           }
+         healthStatus->setPos(x()+20,y()-5);
          this->setFlag(QGraphicsPixmapItem::ItemIsFocusable);
          this->setFocus();
     }

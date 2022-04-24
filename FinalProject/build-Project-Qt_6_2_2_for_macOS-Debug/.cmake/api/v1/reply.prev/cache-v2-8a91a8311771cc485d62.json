@@ -5462,6 +5462,18 @@
 			"value" : "/Users/youssefQt/6.2.2/macos/bin/qmake"
 		},
 		{
+			"name" : "Qt5Multimedia_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt5Multimedia."
+				}
+			],
+			"type" : "PATH",
+			"value" : "Qt5Multimedia_DIR-NOTFOUND"
+		},
+		{
 			"name" : "Qt6CoreTools_DIR",
 			"properties" : 
 			[
@@ -5534,6 +5546,18 @@
 			"value" : "/Users/youssefQt/6.2.2/macos/lib/cmake/Qt6Gui"
 		},
 		{
+			"name" : "Qt6Multimedia_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt6Multimedia."
+				}
+			],
+			"type" : "PATH",
+			"value" : "Qt6Multimedia_DIR-NOTFOUND"
+		},
+		{
 			"name" : "Qt6WidgetsTools_DIR",
 			"properties" : 
 			[
@@ -5568,6 +5592,18 @@
 			],
 			"type" : "PATH",
 			"value" : "/Users/youssefQt/6.2.2/macos/lib/cmake/Qt6"
+		},
+		{
+			"name" : "QtMultimedia_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for QtMultimedia."
+				}
+			],
+			"type" : "PATH",
+			"value" : "QtMultimedia_DIR-NOTFOUND"
 		},
 		{
 			"name" : "WrapOpenGL_AGL",

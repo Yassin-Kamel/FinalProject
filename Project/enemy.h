@@ -7,6 +7,7 @@
 #include <QList>
 #include <time.h>
 #include <QTimer>
+#include <QGraphicsTextItem>
 
 class Enemy: public QObject, public QGraphicsPixmapItem
 {
@@ -19,10 +20,12 @@ public:
     int damage;
     int type;
     int room;
+    QGraphicsTextItem *healthStatus;
     QString name;
     bool obstacleInBetween();
     QGraphicsScene *tempScene;
     QVector<QVector<Map::Item*>> paths;
+    ~Enemy();
 public slots:
     void move();
 };

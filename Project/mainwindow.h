@@ -7,6 +7,7 @@
 #include <QVector>
 #include <QGraphicsPixmapItem>
 #include "game.h"
+#include <QGraphicsBlurEffect>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -25,6 +26,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     void loadAccounts();
+    void gameIsNotActive();
+    QGraphicsBlurEffect *blur;
     ~MainWindow();
 
 private slots:
@@ -32,9 +35,25 @@ private slots:
 
     void on_loginButton_clicked();
 
+    void on_backButton_clicked();
+
     void on_registerButton_clicked();
 
-    void on_backButton_clicked();
+    void on_quitButton_clicked();
+
+    void on_startGameButton_clicked();
+
+    void on_settingsButton_clicked();
+
+    void on_backButton_2_clicked();
+
+    void on_logoutButton_clicked();
+
+    void on_musicButton_clicked();
+
+    void on_soundEffectsButton_clicked();
+
+    void showGameOver();
 
 private:
     Ui::MainWindow *ui;
